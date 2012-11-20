@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test JS Error Logger</title>
+	<script type="text/javascript" src="errorlogger.min.js"></script>
+	<style type="text/css">
+		code { background-color: #eee; padding: 0.2em; }
+	</style>
+</head>
+<body>
+	<h1>JS Error Logger Demo</h1>
+	<ol>
+		<li>Run the test server: <code>$ node server.js</code></li>
+		<li>Open up <a href="http://localhost:3000/">http://localhost:3000/</a> in a browser</li>
+		<li>Look at the server console, you will see the error details along with stacktrace</li>
+	</ol>
+	<script type="text/javascript">
+		function doError() {
+			var a = new SomeUndefinedClass();
+		};
+		doError();
+	</script>
+</body>
+</html>
